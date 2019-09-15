@@ -52,7 +52,7 @@ public class HelloAddress {
 	 public static String readFile() {
 	        StringBuffer str=new StringBuffer("");
 
-	        File file=new File("C:\\Users\\91675\\eclipse-workspace\\addresspartition\\lib\\input.txt");
+	        File file=new File("C:\\Users\\91675\\Desktop\\input.txt");
 
 	        try {
 
@@ -87,7 +87,7 @@ public class HelloAddress {
 	    }
 	 public static void writeFile(String Json) {
 	        try {
-	            File writeName = new File("C:\\Users\\91675\\eclipse-workspace\\addresspartition\\lib\\output.txt"); 
+	            File writeName = new File("C:\\Users\\91675\\Desktop\\output.txt"); 
 	            writeName.createNewFile();
 	            try (FileWriter writer = new FileWriter(writeName);
 	                 BufferedWriter out = new BufferedWriter(writer)

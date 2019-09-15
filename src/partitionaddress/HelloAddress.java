@@ -7,11 +7,14 @@ public class HelloAddress {
 		String Ogdata = readFile();
 		String[] ogdata = Ogdata.split("\\.");
 		int h=ogdata.length;
+		int function=0;
 		System.out.println(ogdata);
 		partition1[] person = new partition1[h];
 		for(int j = 0;j<h;j++) {
 		 person[j]= new partition1();
 		 int ch = ogdata[j].indexOf(",");
+		 if(ogdata[j].charAt(0)=='1') function=1;
+		 else function=2;
 		 person[j].name = person[j].getName(ch,ogdata[j]); 
 		 ogdata[j] = ogdata[j].substring(ch+1); //trimname
 		 int num = 0;
@@ -34,7 +37,8 @@ public class HelloAddress {
 		 }
 		 person[j].telephone = person[j].getTelephone(i,ogdata[j]);
 		 ogdata[j] = ogdata[j].replaceAll(person[j].telephone,""); //trimtelephone
-		 person[j].addressResolution1(ogdata[j]);
+		 if(function == 1) person[j].addressResolution1(ogdata[j]);
+		 else person[j].addressResolution2(ogdata[j]);
 		}
 		List<Map<String,Object>> table=new ArrayList<Map<String,Object>>();
 		for(int j = 0;j<h;j++)

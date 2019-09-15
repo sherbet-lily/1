@@ -42,7 +42,6 @@ public class HelloAddress {
 			table.add(person[j].show());
 		}
 		 JSONArray json = new JSONArray(table);
-	     System.out.println(json.toString());
 	     writeFile(json.toString());
 	}
 	

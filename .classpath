@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="partitionaddress/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="json-lib-2.4-jdk15.jar"/>
 	<classpathentry kind="lib" path="json-20070829.jar"/>
 	<classpathentry kind="lib" path="lib/json包/ezmorph-1.0.3.jar"/>

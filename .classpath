@@ -6,8 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="lib/json包/json-lib-2.4-jdk15.jar"/>
-	<classpathentry kind="lib" path="lib/json包/json-20070829.jar"/>
+	<classpathentry kind="lib" path="json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="json-20070829.jar"/>
 	<classpathentry kind="lib" path="lib/json包/ezmorph-1.0.3.jar"/>
 	<classpathentry kind="lib" path="lib/json包/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="lib/json包/commons-lang3-3.1.jar"/>

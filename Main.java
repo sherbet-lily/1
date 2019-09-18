@@ -19,7 +19,6 @@ public class Main {
 	            String line = "";
 	            line = br.readLine();
 	            while (line != null) {
-	                line = br.readLine();
 	                int function=0;
 	        		partition1 person = new partition1();
 	        		 int ch = line.indexOf(",");
@@ -55,7 +54,8 @@ public class Main {
 	        		table.add(person.show());
 	        		JSONArray json = new JSONArray(table);
 	        	     line = json.toString();
-	        	     out.write(line);
+			     out.write(line);
+			     line = br.readLine();
 	            }
 	            out.flush();
 
